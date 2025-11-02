@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Vivek</title>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("YOUR_PUBLIC_KEY_HERE"); // replace this later
+  })();
+</script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="js/script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">Vivek Balumuri</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="theme-toggle" id="theme-toggle">
+        <span id="light-icon">☀️</span>
+        <span id="dark-icon" class="hidden">🌙</span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="contact">
+    <section class="contact-section">
+      <h1>Let's Connect 🤝</h1>
+      <p>
+        Got a project idea, collaboration offer, or just wanna say hi?  
+        I’d love to hear from you — drop a message below or reach out through my socials ✨
+      </p>
+
+      <div class="contact-content">
+        <form class="contact-form" onsubmit="return false;">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn">Send Message 🚀</button>
+        </form>
+
+        <div class="contact-info">
+          <h2>Reach Me At</h2>
+          <p>📧 <a href="mailto:balumurivivek2678@gmail.com">balumurivivek2678@gmail.com</a></p>
+          <p>📞 <a href="tel:+917207375489">+91 72073 75489</a></p>
+
+          <h2>Find Me Online</h2>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank">🐙 GitHub</a>
+            <a href="https://www.linkedin.com" target="_blank">💼 LinkedIn</a>
+            <a href="https://twitter.com/" target="_blank">🐦 Twitter</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Vivek | Designed with ❤️</p>
+  </footer>
+</body>
+</html>

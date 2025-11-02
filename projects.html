@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Vivek Balumuri</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">Vivek Balumuri</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="theme-toggle" id="theme-toggle">
+        <span id="light-icon">☀️</span>
+        <span id="dark-icon" class="hidden">🌙</span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="projects">
+    <h1>My Projects 💻</h1>
+    <div class="project-container">
+
+      <!-- Sansar -->
+      <div class="project-card" onclick="openModal('sansar')">
+        <h2>🏛️ Sansar</h2>
+        <p>A heritage app showcasing India's monuments and their stories.</p>
+      </div>
+
+      <!-- Nyayavaani -->
+      <div class="project-card" onclick="openModal('nyayavaani')">
+        <h2>⚖️ Nyayavaani</h2>
+        <p>An AI-based legal assistant bot for quick voice-guided legal help.</p>
+      </div>
+
+      <!-- WordWarriors -->
+      <div class="project-card" onclick="openModal('wordwarriors')">
+        <h2>⚔️ WordWarriors</h2>
+        <p>A gamified language learning app with story-driven battles & upgrades.</p>
+      </div>
+    </div>
+
+    <!-- ---------- MODALS ---------- -->
+
+    <!-- Sansar Modal -->
+    <div id="sansar" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('sansar')">&times;</span>
+        <h2>Sansar — Heritage of India</h2>
+        <p>An immersive app to preserve and showcase India’s monuments, with multi-language audio, video, and 3D views.</p>
+        <p><strong>Tech Stack:</strong> Android Studio, Kotlin</p>
+        <a href="javascript:void(0)" class="btn" onclick="openImageModal(['assets/images/sansar1.png','assets/images/sansar2.png','assets/images/sansar3.png','assets/images/sansar4.png','assets/images/sansar5.png','assets/images/sansar6.png','assets/images/sansar7.png'])">See The Work 📷</a>
+        <a href="/assets/images/Sansar.pdf" class="btn">About sansAR 📄</a>
+      </div>
+    </div>
+
+    <!-- Nyayavaani Modal -->
+    <div id="nyayavaani" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('nyayavaani')">&times;</span>
+        <h2>Nyayavaani — Legal Call Bot</h2>
+        <p>AI-powered legal chatbot offering voice-guided assistance and legal insights in multiple languages.</p>
+        <p><strong>Tech Stack:</strong> Python, Android Studio</p>
+        <a href="javascript:void(0)" class="btn" onclick="openImageModal(['images/nyaya1.png','images/nyaya2.png'])">Try Now 🚀</a>
+        <a href="#" class="btn">About 📄</a>
+      </div>
+    </div>
+
+    <!-- WordWarriors Modal -->
+    <div id="wordwarriors" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('wordwarriors')">&times;</span>
+        <h2>WordWarriors — Gamified Learning</h2>
+        <p>Battle-based language learning with evolving heroes, challenges, and an AI-powered dragon companion 🐉</p>
+        <p><strong>Tech Stack:</strong> Flutter, Firebase</p>
+        <a href="javascript:void(0)" class="btn" onclick="openImageModal(['images/ww1.png','images/ww2.png','images/ww3.png'])">Try Now 🚀</a>
+        <a href="#" class="btn">About 📄</a>
+      </div>
+    </div>
+
+    <!-- ---------- IMAGE VIEWER MODAL ---------- -->
+    <div id="imageModal" class="modal">
+      <div class="modal-content image-modal-content">
+        <span class="close" onclick="closeImageModal()">&times;</span>
+        <img id="modalImage" src="" alt="Project Image">
+        <div class="image-nav">
+          <button class="nav-btn" id="prevImg" onclick="prevImage()">&#10094;</button>
+          <button class="nav-btn" id="nextImg" onclick="nextImage()">&#10095;</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Vivek Balumuri | Designed with ❤️</p>
+  </footer>
+</body>
+</html>
